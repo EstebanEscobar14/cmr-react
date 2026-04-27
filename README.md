@@ -7,7 +7,7 @@ Proyecto desarrollado con React, TypeScript, Vite, PrimeReact, React Router y `j
 Construir una agenda basica tipo CRM que permita gestionar empleados y tareas, demostrando las competencias tecnicas pedidas en el examen:
 
 - creacion y configuracion del proyecto
-- JSX y React DOM
+- TSX y React DOM
 - estructura por componentes
 - composicion con props y `children`
 - listas con `key` y renderizado condicional
@@ -82,7 +82,7 @@ API mock:
 - Configuracion revisada en `package.json` y `tsconfig.app.json`.
 - Dependencias gestionadas con npm.
 
-### Competencia 2: JSX, React DOM
+### Competencia 2: TSX, React DOM
 
 - Render principal en [src/main.tsx](C:/Users/User/Desktop/crm-react/src/main.tsx).
 - Aplicacion principal en [src/App.tsx](C:/Users/User/Desktop/crm-react/src/App.tsx).
