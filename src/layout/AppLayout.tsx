@@ -36,6 +36,7 @@ function AppLayout({ employees, tasks, themeMode, setThemeMode }: AppLayoutProps
             <AvatarGroup>
                 {employees.slice(0, 5).map((employee) => (
                     <Avatar 
+                        key={employee.id}
                         image={
                             employee.image ||
                             `https://api.dicebear.com/7.x/bottts-neutral/svg?seed=${encodeURIComponent(employee.name)}`
