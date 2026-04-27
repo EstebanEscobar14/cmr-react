@@ -1,0 +1,87 @@
+:root {
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink-soft);
+  background:
+    linear-gradient(180deg, #fff7f3 0%, #f8f6ff 48%, #f2f7ff 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-body: 'Aptos', 'Segoe UI', sans-serif;
+  --font-display: 'Trebuchet MS', 'Aptos', sans-serif;
+  --ink: #130c3b;
+  --ink-soft: #372f61;
+  --muted: #67638a;
+  --brand: #4d86f7;
+  --brand-strong: #16113f;
+  --brand-warm: #eb6b63;
+  --brand-warm-strong: #eb8b50;
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-strong: #ffffff;
+  --surface-soft: rgba(77, 134, 247, 0.08);
+  --border-soft: rgba(19, 12, 59, 0.1);
+  --shadow-soft: 0 18px 45px rgba(22, 17, 63, 0.09);
+}
+
+:root[data-theme='dark'] {
+  color: #dad7f4;
+  background:
+    linear-gradient(180deg, #09081b 0%, #10112f 50%, #11162f 100%);
+  --ink: #f1efff;
+  --ink-soft: #d2cdf4;
+  --muted: #a19cc5;
+  --brand: #69a0ff;
+  --brand-strong: #f17e63;
+  --brand-warm: #f0646d;
+  --brand-warm-strong: #f39d56;
+  --surface: rgba(15, 13, 43, 0.82);
+  --surface-strong: rgba(21, 18, 54, 0.95);
+  --surface-soft: rgba(105, 160, 255, 0.12);
+  --border-soft: rgba(210, 205, 244, 0.13);
+  --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink-soft);
+  background: inherit;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--font-body);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.p-component {
+  font-family: var(--font-body);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}

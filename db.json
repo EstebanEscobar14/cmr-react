@@ -1,0 +1,145 @@
+{
+  "employees": [
+    {
+      "id": "emp-1",
+      "name": "Lucia Torres",
+      "role": "Account Manager",
+      "email": "lucia.torres@crm.local",
+      "status": "active",
+      "workload": 78
+    },
+    {
+      "id": "emp-2",
+      "name": "Mateo Ruiz",
+      "role": "Sales Ops",
+      "email": "mateo.ruiz@crm.local",
+      "status": "vacation",
+      "workload": 24
+    },
+    {
+      "id": "emp-3",
+      "name": "Noa Delgado",
+      "role": "Customer Success",
+      "email": "noa.delgado@crm.local",
+      "status": "active",
+      "workload": 61
+    },
+    {
+      "id": "emp-4",
+      "name": "Valeria Soto",
+      "role": "Business Developer",
+      "email": "valeria.soto@crm.local",
+      "status": "active",
+      "workload": 73
+    },
+    {
+      "id": "emp-5",
+      "name": "Iker Navarro",
+      "role": "Support Lead",
+      "email": "iker.navarro@crm.local",
+      "status": "offline",
+      "workload": 18
+    },
+    {
+      "id": "emp-6",
+      "name": "Candela Marin",
+      "role": "Sales Executive",
+      "email": "candela.marin@crm.local",
+      "status": "vacation",
+      "workload": 35
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Preparar demo de onboarding",
+      "description": "Revisar el guion comercial y dejar el material listo para la reunion.",
+      "date": "2026-04-28",
+      "priority": "high",
+      "employeeId": "emp-1",
+      "completed": false
+    },
+    {
+      "id": "task-2",
+      "title": "Actualizar forecast semanal",
+      "description": "Ajustar pipeline y comprobar oportunidades con cierre estimado.",
+      "date": "2026-04-29",
+      "priority": "medium",
+      "employeeId": "emp-2",
+      "completed": false
+    },
+    {
+      "id": "task-3",
+      "title": "Llamada de seguimiento con cliente",
+      "description": "Validar incidencias abiertas y proponer siguiente accion.",
+      "date": "2026-04-27",
+      "priority": "low",
+      "employeeId": "emp-3",
+      "completed": true
+    },
+    {
+      "id": "task-4",
+      "title": "Revisar renovaciones de mayo",
+      "description": "Confirmar contratos proximos a vencer y preparar propuesta comercial.",
+      "date": "2026-05-02",
+      "priority": "high",
+      "employeeId": "emp-4",
+      "completed": false
+    },
+    {
+      "id": "task-5",
+      "title": "Actualizar base de contactos",
+      "description": "Depurar duplicados y completar correos pendientes en el CRM.",
+      "date": "2026-05-03",
+      "priority": "medium",
+      "employeeId": "emp-6",
+      "completed": false
+    },
+    {
+      "id": "task-6",
+      "title": "Cerrar incidencias prioritarias",
+      "description": "Dar respuesta a tickets abiertos con mas de 48 horas de antiguedad.",
+      "date": "2026-04-30",
+      "priority": "high",
+      "employeeId": "emp-5",
+      "completed": false
+    },
+    {
+      "id": "task-7",
+      "title": "Preparar informe semanal",
+      "description": "Consolidar resultados del equipo y compartir resumen con direccion.",
+      "date": "2026-05-01",
+      "priority": "medium",
+      "employeeId": "emp-1",
+      "completed": true
+    },
+    {
+      "id": "task-8",
+      "title": "Organizar demo con prospecto",
+      "description": "Coordinar agenda, alcance funcional y responsables de la presentacion.",
+      "date": "2026-05-04",
+      "priority": "low",
+      "employeeId": "emp-4",
+      "completed": false
+    },
+    {
+      "id": "task-9",
+      "title": "Documentar feedback de onboarding",
+      "description": "Recoger comentarios recientes y convertirlos en acciones de mejora.",
+      "date": "2026-05-05",
+      "priority": "medium",
+      "employeeId": "emp-3",
+      "completed": false
+    },
+    {
+      "id": "JwsQUppdItk",
+      "title": "HOLA MUNDO",
+      "description": "HOLA MUNDO EN HTML",
+      "employeeId": "emp-6",
+      "priority": "high",
+      "date": "2026-04-29",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
