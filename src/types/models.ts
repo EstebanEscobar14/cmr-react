@@ -9,6 +9,7 @@ export interface Employee {
   email: string
   status: EmployeeStatus
   workload: number
+  image?: string
 }
 
 export interface AgendaTask {

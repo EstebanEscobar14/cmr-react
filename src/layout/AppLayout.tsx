@@ -1,4 +1,5 @@
 import { Avatar } from 'primereact/avatar'
+import { AvatarGroup } from 'primereact/avatargroup';
 import { Chip } from 'primereact/chip'
 import { InputSwitch } from 'primereact/inputswitch'
 import { Link, NavLink, Outlet } from 'react-router-dom'
@@ -31,7 +32,23 @@ function AppLayout({ employees, tasks, themeMode, setThemeMode }: AppLayoutProps
         <div className="topbar__meta">
           <Chip label={`${employees.length} empleados`} />
           <Chip label={`${pendingTasks} tareas pendientes`} />
-          <Avatar label="NT" shape="circle" />
+        <div className="card flex justify-content-center">
+            <AvatarGroup>
+                {employees.slice(0, 5).map((employee) => (
+                    <Avatar 
+                        image={
+                            employee.image ||
+                            `https://api.dicebear.com/7.x/bottts-neutral/svg?seed=${encodeURIComponent(employee.name)}`
+                        }
+                        size="large" 
+                        shape="circle" 
+                    />
+                ))}
+                {employees.length > 5 && (
+                    <Avatar label={`+${employees.length - 5}`} shape="circle" size="large"/>
+                )}
+            </AvatarGroup>
+        </div>
           <label className="theme-switch" aria-label="Cambiar tema">
             <i className="pi pi-sun theme-switch__icon" aria-hidden="true" />
             <InputSwitch
