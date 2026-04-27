@@ -6,7 +6,7 @@ import { Dropdown } from 'primereact/dropdown'
 import { InputTextarea } from 'primereact/inputtextarea'
 import { InputText } from 'primereact/inputtext'
 import { useEffect, useRef, useState } from 'react'
-import type { FormEvent } from 'react'
+import type { SyntheticEvent } from 'react'
 import type { AgendaTask, Employee, TaskPriority } from '../types/models'
 
 interface TaskFormDialogProps {
@@ -53,7 +53,9 @@ function TaskFormDialog({
     formRef.current.reset()
   }, [employees, open, task])
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (
+    event: SyntheticEvent<HTMLFormElement, SubmitEvent>,
+  ) => {
     event.preventDefault()
 
     const formData = new FormData(event.currentTarget)

@@ -4,7 +4,7 @@ import { Dropdown } from 'primereact/dropdown'
 import { InputNumber } from 'primereact/inputnumber'
 import { InputText } from 'primereact/inputtext'
 import { useEffect, useRef, useState } from 'react'
-import type { FormEvent } from 'react'
+import type { SyntheticEvent } from 'react'
 import type { Employee, EmployeeStatus } from '../types/models'
 
 interface EmployeeFormDialogProps {
@@ -45,7 +45,9 @@ function EmployeeFormDialog({
     formRef.current.reset()
   }, [employee, open])
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (
+    event: SyntheticEvent<HTMLFormElement, SubmitEvent>,
+  ) => {
     event.preventDefault()
 
     const formData = new FormData(event.currentTarget)
